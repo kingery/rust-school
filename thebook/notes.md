@@ -83,3 +83,12 @@ Functions can also transer ownership when passing return values. If we want to p
 - slices have distinct type
   - &str - string slice
   - &[i32] - array slice of type i32
+
+## Structs
+- `struct` keyword
+- access/update with dot notation
+- entire struct is mutable/not mutable--not mutability on field-by-field basis
+- tuple structs: name a tuple and assign types for clarity
+```
+struct Point(u32, u32, u32);
+```
