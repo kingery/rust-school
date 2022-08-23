@@ -1,8 +1,8 @@
 fn main() {
     println!("Running `ownership`...");
 
-    let mut s1 = String::from("This string has words");
-    let mut s2 = String::from("nowords");
+    let s1 = String::from("This string has words");
+    let s2 = String::from("nowords");
 
     let w1 = first_word(&s1);
     let w2 = first_word(&s2);
@@ -63,6 +63,7 @@ fn main() {
     */
 }
 
+/*
 fn calculate_length(s: &String) -> usize {
     s.len()
 }
@@ -80,6 +81,7 @@ fn makes_copy(x: u32) {
     println!("This function makes copy!");
     println!("{}", x);
 }
+*/
 
 fn first_word(s: &String) -> &str {
     let bytes = s.as_bytes();

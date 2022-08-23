@@ -92,3 +92,20 @@ Functions can also transer ownership when passing return values. If we want to p
 ```
 struct Point(u32, u32, u32);
 ```
+
+## Packages
+- Package is made of one or more crates.
+- Crates may either be binary or library.
+- Only one library crate per package
+  - library crate to be used elsewhere
+  - src/lib.rs
+- can have many binary crates
+  - main.rs file that gets compiled into executable
+  - src/main.rs
+- compiler uses a "crate root" file (lib.rs/main.rs) as the base of the crate
+- modules are declared in crate root file
+  - `mod myModule`
+  - code in module is private from parent module
+    - made public at declaration: `pub mod publicModule`
+- `cargo new --lib mylib`
+- crate root file forms a module called "crate"
